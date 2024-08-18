@@ -3,6 +3,7 @@
 	--white-color: #fff;
 	--text-color: #252b42;
 	--orange-color: #e74040;
+	--line-height: 1.5;
 }
 
 @font-face {
@@ -71,6 +72,7 @@ ul {
 .btn {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	border: none;
 	background-color: var(--violat-color);
 	padding: 15px 25px;
@@ -133,4 +135,55 @@ p {
 }
 .sitenav__link:active {
 	opacity: 0.6;
+}
+
+/* HERO */
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: var(--white-color);
+	padding-top: 150px;
+	padding-bottom: 197px;
+}
+.hero__title4 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: var(--line-height);
+	letter-spacing: 0.1px;
+	margin-bottom: 40px;
+}
+.hero__title {
+	font-weight: 700;
+	font-size: 58px;
+	text-align: center;
+	line-height: 1.4;
+	letter-spacing: 0.2px;
+	margin-bottom: 40px;
+}
+.hero__text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: var(--line-height);
+	letter-spacing: 0.2px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+aside {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: var(--text-color);
+}
+.aside__list {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	background-color: var(--text-color);
+  padding-top: 50px;
+	padding-bottom: 50px;
+}
+.aside__img {
+	width: 102px;
+	height: 75px;
+	object-fit: contain;
 }
